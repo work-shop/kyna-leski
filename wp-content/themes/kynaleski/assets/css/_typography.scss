@@ -1,0 +1,173 @@
+
+/********** @TYPOGRAPHY *********/
+
+$font: "Visuelt Regular", Georgia, Helvetica, Arial, sans-serif;
+
+body{
+	font-size: 24px;
+	font-family: $font; 
+	font-weight:normal; 
+	font-style:normal;
+	-webkit-font-smoothing: antialiased;
+}
+
+h1,.h1,h2,.h2,h3,.h3,h4,.h4,h5,.h5,h6,.h6{
+	font-family: $font; 
+	font-weight: normal;
+	line-height: 1.2;
+}
+
+p{
+	font-size: 18px;
+	line-height: 1.85;
+}
+
+h1,.h1{
+	font-size: 34px;
+}
+
+h2,.h2{
+	font-size: 30px;
+}
+
+h3,.h3{
+	font-size: 24px;
+}
+
+h4,.h4{
+	font-size: 18px;
+}
+
+h5,.h5{
+	font-size: 16px;
+}
+
+h6,.h6{
+	font-size: 13px;
+}
+
+.small{
+	font-size: 13px;
+}
+
+
+//md
+@media (max-width: 1200px) {
+	body{
+		font-size: 19px;
+	}
+
+}
+
+//sm
+@media (max-width: 992px) {
+
+
+} 
+
+//xs
+@media (max-width: 767px) {
+
+	body{
+		font-size: 16px;
+	}
+
+	h1,.h1{
+		font-size: 24px;
+	}
+
+	h2,.h2{
+		font-size: 21px;
+	}
+
+	h3,.h3{
+		font-size: 18px;
+	}
+
+	p{
+		font-size: 16px;
+	}
+
+}
+
+
+/********** @FORMATTING *********/
+
+.uppercase{
+	text-transform: uppercase;
+}
+
+.underline{
+	text-decoration: underline;
+}
+
+.centered{
+	text-align: center;
+}
+
+.righted{
+	text-align: right;
+}
+
+.bold{
+	font-weight: 700;
+}
+
+.italic{
+	font-style: italic;
+}
+
+.white{
+	color: white;
+}
+
+.dark{
+	color: $dark;
+}
+
+.gray{
+	color: #8a898a;
+}
+
+.brand{
+	color: $brand;
+}
+
+.yellow{
+	color: $yellow;
+}
+
+.yellow-dark{
+	color: $yellow-dark;
+}
+
+.sky{
+	color: $sky;
+}
+
+.teal{
+	color: $teal;
+}
+
+.text-shadow{
+	 @include text-shadow(2px, 2px, 0px, $brand);
+}
+
+
+/********** @ICONS *********/
+
+.icon{
+	&:before {
+    content: attr(data-icon);
+    font-family: "modern_pictograms_proregular";
+	font-size: 30px;
+	line-height: 100%;
+	vertical-align: middle;
+	position: relative;	
+	}
+	
+	&.large:before{
+		font-size: 80px;
+	}
+
+}

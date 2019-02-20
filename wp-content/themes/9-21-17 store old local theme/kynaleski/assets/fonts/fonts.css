@@ -1,0 +1,20 @@
+@font-face {
+    font-family: 'modern_pictograms_proregular';
+    src: url('modernpictogramspro_234.eot');
+    src: url('modernpictogramspro_234?#iefix') format('embedded-opentype'),
+		url('modernpictogramspro_234.woff') format('woff'),
+		url('modernpictogramspro_234.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Visuelt Regular';
+    src: url('visuelt_regular-web.eot');
+    src: url('visuelt_regular-web?#iefix') format('embedded-opentype'),
+		url('visuelt_regular-web.woff') format('woff'),
+		url('visuelt_regular-web.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+

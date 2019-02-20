@@ -1,0 +1,41 @@
+//comment
+
+//logo animations
+#logo{
+	@include animation("logo-darken-in", 2.3s, ease, 1s, 1);
+}
+
+@include keyframes("logo-darken-in"){
+	0%{
+ 		color: $ultra-light; 	
+	 	-webkit-text-stroke: 1px $stroke-color; 	     	
+	}
+	100%{
+		color: $hover-fill-color;
+ 		-webkit-text-stroke: 1px $hover-stroke-color;
+ 		-webkit-text-stroke: none;
+ 		text-shadow: none;			
+	}
+}
+
+
+//nav item animations
+.nav-inline li a{
+	opacity: 0;
+	@include animation("nav-items-fade-in", 2.3s, ease, 1.3s, 1);
+}
+
+@include keyframes("nav-items-fade-in"){
+	0%{
+ 		opacity: 0;    	
+	}
+	100%{
+		opacity: 1;
+	}
+}
+
+@-moz-document url-prefix(){
+	.nav-inline li a{
+		opacity: 1;
+	}	
+}
